@@ -37,8 +37,6 @@ const timer = {
     }
 };
 
-timer.start();
-
 refs.startBtn.addEventListener('click', () => {
     timer.start();
 });
