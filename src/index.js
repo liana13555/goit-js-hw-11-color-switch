@@ -23,6 +23,7 @@ const timer = {
 
         const startTime = Date.now();
         this.isActive = true;
+        refs.startBtn.disabled = true;
 
         this.intervalId = setInterval(() => {
             const currentTime = Date.now();
@@ -34,6 +35,7 @@ const timer = {
     stop() {
         clearInterval(this.intervalId);
         this.isActive = false;
+        refs.startBtn.disabled = false;
     }
 };
 
